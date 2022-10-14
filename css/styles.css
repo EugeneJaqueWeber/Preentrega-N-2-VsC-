@@ -1,0 +1,784 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/** aqui comienza mi codigo :D */
+
+.container-indexhtml {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 250px 100px;
+    grid-template-areas: 
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "none footer footer footer footer"
+    ;
+    background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+}
+
+/** header */
+
+header {
+    background-color: black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+}
+header:hover {
+    animation-name: headertransform;
+    animation-duration: 900ms;
+    animation-delay: 300ms;
+    width: 610px;
+}
+@keyframes headertransform {   
+     0% {
+       width: 216px;        
+     }
+     5% {
+       width: 230px;
+     }
+     10% {
+       width: 250px;
+     }
+     15% {
+       width: 270px;
+     }
+     20% {
+       width: 290px;
+     }
+     25% {
+       width: 310px;
+     }
+     30% {
+       width: 330px;
+     }
+     35% {
+       width: 350px;
+     }
+     40% {
+       width: 370px;
+     }
+     45% {
+       width: 390px;
+     }
+     50% {
+       width: 410px;
+     }
+     55% {
+       width: 430px;
+     }
+     60% {
+       width: 450px;
+     }
+     65% {
+       width: 470px;
+     }
+     70% {
+       width: 490px;
+     }
+     75% {
+       width: 510px;
+     }
+     80% {
+       width: 530px;
+     }
+     85% {
+       width: 550px;
+     }
+     90% {
+       width: 570px;
+     }
+     95% {
+       width: 590px;
+     }
+     100% {
+       width: 610px;
+     }
+}
+.INICIO-icon {
+    width: 70px;
+    height: 70px;
+}
+.container-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li a {
+    text-decoration : none;
+    color: white;
+    font-family: sans-serif;
+}
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.navbar:hover {
+       transform: scale(1.5);
+}
+
+/** main */
+
+main {
+    grid-area: main;
+    width: auto;
+    height: auto;
+}
+.article-indexhtml img {
+    width: 200px;
+    height: 180px;
+}
+.article-indexhtml-1 {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 30px;
+}
+.article-indexhtml-1 div p {
+    width: 500px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.article-indexhtml-2 {
+      color: white;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 30px;
+}
+.article-indexhtml-2 div p {
+    width: 500px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.article-indexhtml-3 {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 30px;
+}
+.article-indexhtml-3 div p {
+    width: 500px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+/** footer */
+
+footer {
+    grid-area: footer;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.facebook img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.instagram img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.github img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.linkedin img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+/** adaptacion tablet (768 pixeles) */
+
+@media (max-width: 768px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .container-indexhtml {
+        width: 100%;
+        height: 900px;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+     header {
+        grid-area: header;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 1fr;
+    }
+    .INICIO-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .container-icon {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-items: center;
+    }
+    header nav ul li a {
+        text-decoration : none;
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+    .navbar-container {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .article-indexhtml img {
+        width: 150px;
+        height: 150px;
+        margin: 25px;
+    }
+    .article-indexhtml-1 {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+    }
+    .article-indexhtml-1 div p {
+        width: 250px;
+        height: 200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .article-indexhtml-2 {
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+    }
+    .article-indexhtml-2 div p {
+        width: 250px;
+        height: 200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .article-indexhtml-3 {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+  }
+  .article-indexhtml-3 div p {
+      width: 250px;
+      height: 200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+  }
+  footer {
+      grid-area: footer;
+      width: 768px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  .facebook img {
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+  }
+  .whatsapp img {
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+  }
+  .instagram img {
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+  }
+  .github img {
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+  }
+  .linkedin img {
+      width: 30px;
+      height: 30px;
+      margin: 20px;
+  }
+}
+
+/**mi idea principal fue adaptar la mayor parte de mi codigo a css grids.
+ sin embargo me resulto mas facil hacerlo con flexbox. */
+
+
+/**la siguiente pagina que hice fue contactos-->*/
+/**el header lo hice igual que el index.html.
+ no coloque footer, los contactos fueron directos al main*/
+
+
+.main-contactos .section-main-contactos {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+}
+.section-main-contactos {   
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.main-contactos .section-main-contactos div img {
+     width: 70px;
+     height: 70px;
+     margin-right: 30px;
+}
+.main-contactos .section-main-contactos div div h2 {
+    width: 200px;
+}
+.div1-section-contactos {
+     width: 400px;
+     height: 100px;
+     margin: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.main-contactos .section-main-contactos div div a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.div2-section-contactos {
+   width: 400px;
+   height: 100px;
+   margin: 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.div3-section-contactos {
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.div4-section-contactos {
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.div5-section-contactos {
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/** adaptacion tablet page: contactos (768 pixeles) */
+
+@media (max-width: 768px){
+   .main-contactos .section-main-contactos {
+    height: 800px;
+   }
+
+
+   
+    .div1-section-contactos {
+    margin-top: 60px;
+   }
+}
+
+/** adaptacion mobile (425 pixeles) */
+
+@media (max-width: 425px){
+    .container-indexhtml {
+        width: 425px;
+        background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+
+    }
+    header {
+        width: 425px;
+    }
+    header nav ul li a {
+        text-decoration : none;
+        color: white;
+        font-family: sans-serif;
+        font-size: 7px;
+    }
+    .INICIO-icon {
+        width: 25px;
+        height: 25px;
+    }
+    main {
+        grid-area: main;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-indexhtml img {
+        width: 70px;
+        height: 70px;
+        margin: 25px;
+    }
+    .article-indexhtml-1 div p {
+        width: 200px;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+    }
+    .article-indexhtml-2 div p {
+        width: 200px;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+    }
+    .article-indexhtml-3 div p {
+        width: 200px;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+    }
+    footer {
+        grid-area: footer;
+        width: 425px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/** adaptacion mobile page: contactos (425 pixeles) */
+
+@media (max-width: 425px){
+    .container-indexhtml {
+        width: 425px;
+        background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+    }
+    header {
+        width: 425px;
+    }
+    .main-contactos .section-main-contactos {
+        width: 425px;
+        height: 800px;
+        display: grid;
+        background: rgb(2,0,36);
+        background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+        margin-bottom: 0%;
+    }
+    .section-main-contactos {   
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .main-contactos .section-main-contactos div img {
+         width: 50px;
+         height: 50px;
+         margin-right: 30px;
+         margin-top: 50px;
+    }
+    .main-contactos .section-main-contactos div div h2 {
+        width: 190px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .div1-section-contactos {
+         width: 380px;
+         height: 100px;
+         margin: 30px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+    }
+    .div2-section-contactos {
+       width: 380px;
+       height: 100px;
+       margin: 30px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+    .div3-section-contactos {
+        width: 380px;
+        height: 100px;
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .div4-section-contactos {
+        width: 380px;
+        height: 100px;
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .div5-section-contactos {
+        width: 380px;
+        height: 100px;
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/** page: sobre mi*/
+
+.container-sobremi {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 250px 100px;
+    grid-template-areas: 
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "none footer footer footer footer"
+    ;
+    background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+}
+.div-main-sobremi-img img {
+    width: 150px;
+    height: 200px;
+}
+.main-sobremi section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+.main-sobremi section article {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.main-sobremi section article h1 {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-sobremi section article p {
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/** page: proyectos */
+
+.container-proyectos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 250px 100px;
+    grid-template-areas: 
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "none footer footer footer footer"
+    ;
+    background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    margin-bottom: 0%;
+}
+
+.main-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.-proyectos-main-section-1 {
+    width: 440px;
+    height: 600px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "img-proyectos1 img-proyectos2"
+    "img-proyectos3 img-proyectos4"
+    "img-proyectos5 img-proyectos6"
+    ;
+}
+main section div a img {
+    width: 170px;
+    height: 170px;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos1;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos2;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos3;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos4;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos5;
+}
+.proyectos-section-main1 {
+    grid-area: img-proyectos6;
+}
